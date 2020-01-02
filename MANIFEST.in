@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include optics *.css
+recursive-include optics *.csv
+recursive-include optics *.html
+recursive-include optics *.ico
+recursive-include optics *.js
+recursive-include optics *.json
+recursive-include optics *.md
+recursive-include optics *.png
+recursive-include optics *.py
+recursive-include optics *.svg
+recursive-include optics *.txt
+recursive-exclude optics *.pyc
