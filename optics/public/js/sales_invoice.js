@@ -89,7 +89,6 @@ frappe.call({
 	},
 	callback: function (r) {
 		if (!r.exc) {
-			console.log('r.message.length',r.message.length)
 			if (r.message.length==4) {
 				right_lens_type='ByFocal'
 			}
@@ -109,7 +108,6 @@ frappe.call({
 						'SPHR': r_sph_2,
 						'CYLR': r_cyl_2
 					};
-					console.log(1)
 					frappe.call({
 						method: "optics.api.get_item_codes_by_attributes_cf",
 						args: {
@@ -142,7 +140,6 @@ frappe.call({
 							'SPH': r_sph_1,
 							'CYL': r_cyl_1,
 						};
-						console.log(2)
 					frappe.call({
 						method: "optics.api.get_item_codes_by_attributes_cf",
 						args: {
@@ -176,7 +173,6 @@ frappe.call({
 							'SPH': r_sph_2,
 							'CYL': r_cyl_2,
 						};
-						console.log(3)
 					frappe.call({
 						method: "optics.api.get_item_codes_by_attributes_cf",
 						args: {
@@ -213,7 +209,6 @@ frappe.call({
 	},
 	callback: function (r) {
 		if (!r.exc) {
-			console.log('r.message.length',r.message.length)
 			if (r.message.length==4) {
 				left_lens_type='ByFocal'
 			}
@@ -233,7 +228,6 @@ frappe.call({
 						'SPHR': l_sph_2,
 						'CYLR': l_cyl_2
 					};
-					console.log(4)
 					frappe.call({
 						method: "optics.api.get_item_codes_by_attributes_cf",
 						args: {
@@ -267,7 +261,6 @@ frappe.call({
 							'SPH': l_sph_1,
 							'CYL': l_cyl_1,
 						};
-						console.log(5)
 					frappe.call({
 						method: "optics.api.get_item_codes_by_attributes_cf",
 						args: {
@@ -301,7 +294,6 @@ frappe.call({
 								   'SPH': l_sph_2,
 								   'CYL': l_cyl_2,
 							   };
-							   console.log(6)
 						   frappe.call({
 							   method: "optics.api.get_item_codes_by_attributes_cf",
 							   args: {
