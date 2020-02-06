@@ -78,6 +78,9 @@ frappe.ui.form.on('Sales Invoice', {
 			frm.refresh_field('items')
 		}		
 //  decide lens type
+if (right_lens_cf!=undefined) {
+	
+
 let right_lens_type='';
 frappe.call({
 	method: "erpnext.portal.product_configurator.utils.get_attributes_and_values",
@@ -199,7 +202,9 @@ frappe.call({
 		}
 	}
 });
+}
 
+if (left_lens_cf!=undefined) {
 let left_lens_type='';
 frappe.call({
 	method: "erpnext.portal.product_configurator.utils.get_attributes_and_values",
@@ -323,7 +328,7 @@ frappe.call({
 		}}});
 
 
-
+	}
  
 
 		
